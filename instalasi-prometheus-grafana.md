@@ -1,7 +1,7 @@
 ### Apa itu prometheus dan grafana ?
 
 Prometheus adalah sistem untuk monitoring dan time-series database. prometheus akan mengumpulkan data penggunaan resource server ataupun log aplikasi yang nantinya akan disimpan secara time-series (berurutan sesuai waktu pengambilan datanya). data ini nantinya akan bisa ditampilkan dalam dashboard monitoring penggunaan resource server. cara kerja prometheus adalah prometheus akan melakukan penarikan data pada tiap-tiap server yang sudah dikonfigurasi sebelumnya secara periodik. agar prometheus bisa mengambil data penggunaan resources dan log dibutuhkan yang namanya `exporter` yaitu sebuah software yang akan metric penggunaan server. exporter ini ada banyak jenisnya, tapi yang umum dipakai adalah
-node exporter untuk mengumpulkan data penggunaan memory, cpu usage, io dan lain-lain. jika membutuhkan data terkait aplikasi seperti postgres database, php-fpm dan sebagainya bisa dilihat di https://prometheus.io/docs/instrumenting/exporters/https://prometheus.io/docs/instrumentin.
+node exporter untuk mengumpulkan data penggunaan memory, cpu usage, io dan lain-lain. jika membutuhkan data terkait aplikasi seperti postgres database, php-fpm dan sebagainya bisa dilihat di https://prometheus.io/docs/instrumenting/exporters/.
 
 sedangkan grafana adalah platform untuk membuat dashboard berdasarkan data yang ada pada prometheus.
 
